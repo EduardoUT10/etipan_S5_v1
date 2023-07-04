@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mcordovaS5a.Insertar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Insertar estudiantes" FontSize="20" HorizontalTextAlignment="Center" />
+            <Entry x:Name="txtCodigo" Placeholder="Codigo" Keyboard="Numeric" />
+            <Entry x:Name="txtNombre" Placeholder="Nombre" Keyboard="Numeric" />
+            <Entry x:Name="txtApellido" Placeholder="Apellido" Keyboard="Numeric" />
+            <Entry x:Name="txtEdad" Placeholder="Edad" Keyboard="Numeric" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="ntnInsertar" Text="INSERTAR" Clicked="ntnInsertar_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnCancelar" Text="SALIR" Clicked="btnCancelar_Clicked" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
