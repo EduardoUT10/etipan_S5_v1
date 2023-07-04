@@ -25,7 +25,6 @@ namespace mcordovaS5a
 
         private void btnActualizar_Clicked(object sender, EventArgs e)
         {
-
             WebClient cliente = new WebClient();
             var parametros = new System.Collections.Specialized.NameValueCollection(); //contenedor de los datos como un vector
 
@@ -33,7 +32,7 @@ namespace mcordovaS5a
             parametros.Add("apellido", txtApellido.Text);
             parametros.Add("edad", txtEdad.Text);
 
-            cliente.UploadValues("http://192.168.20.34/ws_uisrael/post.php?txtCodigo=" + txtCodigo.Text + "&nombre=" + txtNombre.Text + "&apellido=" + txtApellido.Text + "&edad=" + txtEdad.Text, "PUT", parametros);
+            cliente.UploadValues("http://192.168.56.1/ws_uisrael/post.php?codigo=" + txtCodigo.Text + "&nombre=" + txtNombre.Text + "&apellido=" + txtApellido.Text + "&edad=" + txtEdad.Text, "PUT", parametros);
 
             DisplayAlert("ACTUALIZAR", "Dato actualizado con exito", "Cerrar");
 
@@ -49,9 +48,9 @@ namespace mcordovaS5a
             parametros.Add("apellido", txtApellido.Text);
             parametros.Add("edad", txtEdad.Text);
 
-            cliente.UploadValues("http://192.168.20.34/ws_uisrael/post.php?txtCodigo=" + txtCodigo.Text, "DELETE", parametros);
+            cliente.UploadValues("http://192.168.56.1/ws_uisrael/post.php?codigo=" + txtCodigo.Text, "DELETE", parametros);
 
-            DisplayAlert("ELIMINAR", "Dato actualizado con exito", "Cerrar");
+            DisplayAlert("ELIMINAR", "Dato eliminado con exito", "Cerrar");
 
             Navigation.PushAsync(new MainPage());
         }
