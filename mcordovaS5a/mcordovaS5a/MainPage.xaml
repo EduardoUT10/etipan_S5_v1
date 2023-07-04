@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mcordovaS5a.MainPage">
-
+<!-- pro eduardo  u tipan-->
     <StackLayout>
         <Label Text="CONSUMO DE SERVICIO WEB" FontSize="20" HorizontalOptions="Center" />
         <Grid>
