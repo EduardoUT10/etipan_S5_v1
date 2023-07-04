@@ -14,8 +14,8 @@ namespace mcordovaS5a
    
     public partial class MainPage : ContentPage
     {
-        private string Url = "http://192.168.20.38:8088/ws_uisrael/post.php";
-        private HttpClient cliente = new HttpClient();
+        public string Url = "http://192.168.20.34/ws_uisrael/post.php";
+        public HttpClient cliente = new HttpClient();
         private ObservableCollection<Estudiante> post;
         public MainPage()
         {
@@ -45,6 +45,8 @@ namespace mcordovaS5a
             string apellido = objeto.apellido.ToString();
             string edadTem = objeto.edad.ToString();
             int edad = Convert.ToInt32(edadTem);
+
+            Navigation.PushAsync(new ActualizarEliminar(codigo, nombre, apellido, edad));
         }
     }
 }

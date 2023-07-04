@@ -6,8 +6,8 @@
         <StackLayout>
             <Label Text="Insertar estudiantes" FontSize="20" HorizontalTextAlignment="Center" />
             <Entry x:Name="txtCodigo" Placeholder="Codigo" Keyboard="Numeric" />
-            <Entry x:Name="txtNombre" Placeholder="Nombre" Keyboard="Numeric" />
-            <Entry x:Name="txtApellido" Placeholder="Apellido" Keyboard="Numeric" />
+            <Entry x:Name="txtNombre" Placeholder="Nombre" Keyboard="Text" />
+            <Entry x:Name="txtApellido" Placeholder="Apellido" Keyboard="Text" />
             <Entry x:Name="txtEdad" Placeholder="Edad" Keyboard="Numeric" />
             <Grid>
                 <Grid.RowDefinitions>
@@ -17,7 +17,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="ntnInsertar" Text="INSERTAR" Clicked="ntnInsertar_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnInsertar" Text="INSERTAR" Clicked="btnInsertar_Clicked" Grid.Row="0" Grid.Column="0"/>
                 <Button x:Name="btnCancelar" Text="SALIR" Clicked="btnCancelar_Clicked" Grid.Row="0" Grid.Column="1"/>
             </Grid>
             

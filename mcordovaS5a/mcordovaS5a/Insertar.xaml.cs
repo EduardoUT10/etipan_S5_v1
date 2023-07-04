@@ -18,7 +18,7 @@ namespace mcordovaS5a
             InitializeComponent();
         }
 
-        private void ntnInsertar_Clicked(object sender, EventArgs e)
+        private void btnInsertar_Clicked(object sender, EventArgs e)
         {
             try
             {
